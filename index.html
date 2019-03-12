@@ -8,23 +8,75 @@
       navigator.serviceWorker.register('./service_worker.js').then(function() { console.log('Service Worker Registered'); });
    }
   </script>
-  <title>Hello PWA.</title>
-  <style>
-    body {
-      text-align:center;
-      font-size: 40px;
-      vertical-align: middle;
-    }
-    .image {
-      width: 80%; 
-      margin: auto;
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <script src="js/modernizr.custom.79639.js"></script>
+  <title>旅のしおり</title>
 </head>
 <body>
-  <h1>Hello PWA.</h1>
-  <img src="./pwa-logo.svg" alt="PWA logo" class="image" />
-  <a href="p.html">p.html</a>
+  <div class="bb-custom-wrapper">
+
+      <div id="bb-bookblock" class="bb-bookblock">
+        <div class="bb-item" id="item1">
+            <div class="content">
+                <div class="scroller">
+                    <h2>題名</h2>
+                    <p>...</p> //　ここに文章を記述します。
+                </div>
+            </div><!-- /content -->
+        </div><!-- /　 /bb-item（ここまでで１ページ分のひとまとまり） -->
+  
+        <div class="bb-item" id="item2">
+            <div class="content">
+                <div class="scroller">
+                  <p>a</p>
+                </div>
+            </div>
+        </div>
+  
+        <div class="bb-item" id="item3">
+            <div class="content">
+                <div class="scroller">
+                 <p>i</p>
+                </div>
+            </div>
+        </div>
+  
+        <div class="bb-item" id="item4">
+            <div class="content">
+                <div class="scroller">
+                 <p>u</p>
+                </div>
+            </div>
+        </div>
+  
+        <div class="bb-item" id="item5">
+            <div class="content">
+                <div class="scroller">
+                 <p>e</p>
+                </div>
+            </div>
+        </div>
+      </div><!-- /bb-bookblock -->
+      <nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+      </nav>
+    
+  </div><!-- /bb-custom-wrapper -->
+    
+  </div><!-- /container -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script src="js/jquery.jscrollpane.min.js"></script>
+  <script src="js/jquerypp.custom.js"></script>
+  <script src="js/jquery.bookblock.js"></script>
+  <script src="js/page.js"></script>
+  <script>
+    $(function() {
+    Page.init();
+    });
+  </script>
 </body>
 </html>
