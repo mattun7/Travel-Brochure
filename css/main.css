@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'tanuki';
+    src: url(../font/TanukiMagic.ttf) format('truetype');
+}
+
+#item1 .content {
+    width: 100% !important;
+}
+
+#item1 .image {
+    text-align: center !important;
+    margin-bottom: 50px !important;
+}
+
+#item1 h1 {
+    font-family: 'tanuki';
+    text-align: center !important;
+}
