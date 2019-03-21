@@ -3,17 +3,26 @@
     src: url(../font/TanukiMagic.ttf) format('truetype');
 }
 
-#item1 .content {
-    width: 100% !important;
-}
-
 #item1 .image {
-    position: absolute  ;
-    left: 27%;
-    margin-bottom: 50px !important;
+    margin-bottom: 50px ;
+    text-align: center;
 }
 
 #item1 h1 {
     font-family: 'tanuki';
-    text-align: center !important;
+    text-align: center;
+}
+
+#item2 .image {
+    text-align: center;
+}
+
+#item2 .gundom {
+    width: 200px;
+    height: 200px;
+}
+
+#item2 .freedomGirl {
+    width: 200px;
+    height: 250px;
 }
