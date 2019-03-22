@@ -126,21 +126,20 @@ a:hover {
 }
 
 .bb-custom-wrapper nav {
-	top: 20px;
-	left: 60px;
 	position: absolute;
 	z-index: 1000;
+	display: flex;
+	bottom: 0;
+	width: 100%;
 }
 
 .bb-custom-wrapper nav span,
 .menu-button {
-	position: absolute;
-	width: 32px;
+	width: 50%;
 	height: 32px;
 	top: 0;
 	left: 0;
 	background: #f1103a;
-	border-radius: 50%;
 	color: #fff;
 	line-height: 30px;
 	text-align: center;
@@ -184,7 +183,7 @@ a:hover {
 
 .js .content {
 	position: absolute;
-	top: 60px;
+	top: 20px;
 	left: 0;
 	width: 100%;
 	bottom: 50px;

@@ -25,7 +25,7 @@ var Page = (function() {
 			}
 		} ),
 		$navNext = $( '#bb-nav-next' ),
-		$navPrev = $( '#bb-nav-prev' ).hide(),
+		$navPrev = $('#bb-nav-prev').css('visibility','hidden'),
 		$menuItems = $container.find( 'ul.menu-toc > li' ),
 		$tblcontents = $( '#tblcontents' ),
 		transEndEventNames = {
@@ -37,7 +37,6 @@ var Page = (function() {
 		},
 		transEndEventName = transEndEventNames[Modernizr.prefixed('transition')],
 		supportTransitions = Modernizr.csstransitions;
-
 	function init() {
 
 		// initialize jScrollPane on the content div of the first item
@@ -129,17 +128,19 @@ var Page = (function() {
 		
 		if( current === 0 ) {
 			$navNext.show();
-			$navPrev.hide();
+			//$navPrev.hide();
+			$navPrev.css('visibility','hidden');
 		}
 		else if( isLastPage ) {
 			$navNext.hide();
-			$navPrev.show();
+			//$navPrev.show();
+			$navPrev.css('visibility','visible');
 		}
 		else {
 			$navNext.show();
-			$navPrev.show();
+			//$navPrev.show();
+			$navPrev.css('visibility','visible');
 		}
-
 	}
 
 	function toggleTOC() {
