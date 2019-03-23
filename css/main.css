@@ -3,6 +3,10 @@
     src: url(../font/TanukiMagic.ttf) format('truetype');
 }
 
+body {
+    font-family: 'tanuki';
+}
+
 #item1 .image {
     margin-top: 30%;
     margin-bottom: 50px ;
@@ -10,7 +14,6 @@
 }
 
 #item1 h1 {
-    font-family: 'tanuki';
     text-align: center;
 }
 
@@ -26,4 +29,23 @@
 #item2 .freedomGirl {
     width: 200px;
     height: 250px;
+}
+
+#item3 .image {
+    text-align: center;
+}
+
+#item3 .checkIn {
+    width: 200px;
+    height: 200px;
+}
+
+#item3 .buffet {
+    width: 200px;
+    height: 200px;
+}
+
+#item3 .hotel {
+    width: 200px;
+    height: 200px;
 }
