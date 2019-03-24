@@ -194,7 +194,7 @@ a:hover {
 }
 
 .scroller {
-	padding: 10px 5% 10px 5%;
+	padding: 10px 4% ;
 }
 
 .js .content:before,
@@ -220,17 +220,6 @@ a:hover {
 	background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: -o-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 	background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-}
-
-.content h2 {
-	font-weight: 300;
-	font-size: 4em;
-	padding: 0 0 10px;
-	color: #333;
-	margin: 0 1% 40px;
-	text-align: left;
-	box-shadow: 0 10px 0 rgba(0,0,0,0.02);
-	text-shadow: 0 0 2px #fff;
 }
 
 .no-js .content h2 {

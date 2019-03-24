@@ -7,45 +7,36 @@ body {
     font-family: 'tanuki';
 }
 
-#item1 .image {
+footer {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.image {
+    text-align: center;
+}
+
+.image img {
+    width: 200px;
+    height: 200px;
+}
+
+.frontCover {
     margin-top: 30%;
     margin-bottom: 50px ;
-    text-align: center;
 }
 
-#item1 h1 {
-    text-align: center;
-}
-
-#item2 .image {
-    text-align: center;
-}
-
-#item2 .gundom {
-    width: 200px;
-    height: 200px;
-}
-
-#item2 .freedomGirl {
-    width: 200px;
-    height: 250px;
-}
-
-#item3 .image {
-    text-align: center;
-}
-
-#item3 .checkIn {
-    width: 200px;
-    height: 200px;
-}
-
-#item3 .buffet {
-    width: 200px;
-    height: 200px;
-}
-
-#item3 .hotel {
-    width: 200px;
-    height: 200px;
+@media only screen and (max-width: 320px) {
+    h1{
+        font-size: 1.7em;
+    }
 }
