@@ -13,8 +13,46 @@ footer {
     margin-top: 10px;
 }
 
+.footer2 {
+    margin-top: 175px;
+}
+
+.footer3 {
+    margin-top: 200px;
+}
+
+@media only screen and (min-width: 375px) {
+    .footer1{
+        margin-top: 70px;
+    }
+    .footer2{
+        margin-top: 270px;
+    }
+    .footer3{
+        margin-top: 290px;
+    }
+}
+
 h1 {
     text-align: center;
+}
+
+.TOC {
+    text-align: center;
+    margin: 20% 0 25%;
+}
+
+p.TOC_p {
+    text-align: center;
+    padding: 10px 8%;
+}
+
+.indent1 {
+    padding-right: 4px;
+}
+
+.indent2 {
+    padding-right: 6px;
 }
 
 .title {
@@ -25,7 +63,7 @@ h1 {
     text-align: center;
 }
 
-.image img {
+img {
     width: 200px;
     height: 200px;
 }
@@ -39,4 +77,20 @@ h1 {
     h1{
         font-size: 1.7em;
     }
+}
+
+.freedomGirl {
+    height: 250px;
+}
+
+.sushi {
+    width: 90%;
+}
+
+.fujiyama {
+    width: 100%;
+}
+
+.transform {
+    transform: rotate(90deg)
 }

@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- manifest.jsonを呼び出しています -->
   <link rel="manifest" href="./manifest.json">
@@ -18,99 +20,181 @@
   <title>旅のしおり</title>
 </head>
 <body>
-    <div class="bb-custom-wrapper">
-        <div id="bb-bookblock" class="bb-bookblock">
-            <div class="bb-item" id="item1">
-                <div class="content">
-                    <div class="scroller">
-                        <div class="image frontCover">
-                            <image src="images/icons/icon-192x192.png"></image>
+    <div id="container" class="container">
+        <div class="menu-panel">
+            <h1 class="TOC">目次</h1>
+            <ul id="menu-toc">
+                <li>
+                    <a href="#item2">１日目&nbsp;行き編&nbsp;in&nbsp;新幹線&nbsp;</a>..........1
+                </li>
+            </ul>
+        </div>
+        <div class="bb-custom-wrapper">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <div class="bb-item" id="item1">
+                    <div class="content">
+                        <div class="scroller">
+                            <div class="image frontCover">
+                                <image src="images/icons/icon-192x192.png"></image>
+                            </div>
+                            <h1>1泊2日!!聖地巡礼の旅</h1><h1>〜Faker編〜</h1>
                         </div>
-                        <h1>1泊2日!!聖地巡礼の旅</h1><h1>〜Faker編〜</h1>
                     </div>
-                </div><!-- /content -->
-            </div><!-- /　 /bb-item（ここまでで１ページ分のひとまとまり） -->
-            <div class="bb-item" id="item2">
-                <div class="content">
-                    <div class="scroller">
-                        <h1 class="title">～１日目&nbsp;Faker編&nbsp;in&nbsp;お台場&nbsp;～</h1>
-                        <p>自由の女神で写真撮影</p>
-                        <div class="image">
-                            <image class="freedomGirl" src="images/companion/freedom_girl_faker.png"></image>
+                </div>
+                <div class="bb-item" id="item8">
+                    <div class="content">
+                        <div class="scroller">
+                            <div class="menu-panel">
+                                <h1 class="TOC">目次</h1>
+                                <ul id="menu-toc">
+                                    <li>
+                                        <p class="TOC_p"><a href="#item2">１日目&nbsp;行き編&nbsp;in&nbsp;新幹線&nbsp;</a>..........1</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="TOC_p">１日目&nbsp;Faker編&nbsp;in&nbsp;お台場<span class="indent1""></span>.........2</p>
+                            <p class="TOC_p">１日目&nbsp;ディズニー編&nbsp;.............3</p>
+                            <p class="TOC_p">２日目&nbsp;ディズニー編&nbsp;.............4</p>
+                            <p class="TOC_p">２日目&nbsp;Faker編&nbsp;in&nbsp;幕張<span class="indent2"></span>...........5</p>
+                            <p class="TOC_p">２日目&nbsp;帰り編&nbsp;in&nbsp;新幹線&nbsp;..........6</p>
                         </div>
-                        <p>ガンダムの前で写真撮影</p>
-                        <div class="image">
-                            <image class="gundom" src="images/companion/gundam_faker.png"></image>
+                    </div>
+                </div>
+                <div class="bb-item" id="item7">
+                    <div class="content">
+                        <div class="scroller">
+                            <h1 class="title">～１日目&nbsp;行き編&nbsp;in&nbsp;新幹線&nbsp;～</h1>
+                            <p>元気よく出発</p>
+                            <div class="image">
+                                <image class="fujiyama" src="images/companion/fujiyama.JPG"></image>
+                            </div>
+                            <p>スジャータを食べる</p>
+                            <div class="image">
+                                <image class="ice"" src="images/companion/ice.png"></image>
+                            </div>
+                            <footer class="footer1">
+                                1/6
+                            </footer>
                         </div>
-                        <footer>
-                            1/5
-                        </footer>
+                    </div>
+                </div>
+                <div class="bb-item" id="item2">
+                    <div class="content">
+                        <div class="scroller">
+                            <h1 class="title">～１日目&nbsp;Faker編&nbsp;in&nbsp;お台場&nbsp;～</h1>
+                            <p>お昼は串家物語<br>ダイバーシティ&nbsp;東京プラザ店</p>
+                            <div class="image">
+                                <image class="lunch" src="images/companion/lunch.png"></image>
+                            </div>
+                            <p>台場一丁目商店街にて射的</p>
+                            <div class="image">
+                                <image class="cum" src="images/companion/cum.png"></image>
+                            </div>
+                            <p>自由の女神で写真撮影</p>
+                            <div class="image">
+                                <image class="freedomGirl" src="images/companion/freedom_girl_faker.png"></image>
+                            </div>
+                            <p>ガンダムの前で写真撮影</p>
+                            <div class="image">
+                                <image class="gundom" src="images/companion/gundam_faker.png"></image>
+                            </div>
+                            <p>観覧車に乗る</p>
+                            <div class="image">
+                                <image class="ferris_wheel" src="images/companion/ferris_wheel.png"></image>
+                            </div>
+                            <footer>
+                                2/6
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item3">
+                    <div class="content">
+                        <div class="scroller">
+                            <h1 class="title">～１日目&nbsp;ディズニー編～</h1>
+                            <p>ミラコスタにチェックイン</p>
+                            <div class="image">
+                                <image class="checkIn" src="images/companion/check_in.png"></image>
+                            </div>
+                            <p>シェフミッキーで夜ご飯</p>
+                            <div class="image">
+                                <image class="buffet" src="images/companion/buffet.png"></image>
+                            </div>
+                            <p>ミラコスタでお泊り</p>
+                            <div class="image">
+                                <image class="hotel" src="images/companion/hotel.JPG"></image>
+                            </div>
+                            <footer>
+                                1/6
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item4">
+                    <div class="content">
+                        <div class="scroller">
+                            <h1 class="title">～２日目&nbsp;ディズニー編～</h1>
+                            <p>クリスタルパレスで朝食</p>
+                            <div class="image">
+                                <image class="breakfast transform" src="images/companion/breakfast.JPG"></image>
+                            </div>
+                            <p>ディズニーランドを満喫</p>
+                            <div class="image">
+                                <image class="roller_coaster" src="images/companion/roller_coaster.png"></image>
+                            </div>
+                            <footer class="footer1">
+                                1/6
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item5">
+                    <div class="content">
+                        <div class="scroller">
+                            <h1 class="title">～２日目&nbsp;Faker編&nbsp;in&nbsp;幕張&nbsp;～</h1>
+                            <p>夜は寿司&nbsp;やまと<br>海浜幕張店</p>
+                            <div class="image">
+                                <image class="sushi" src="images/companion/sushi.png"></image>
+                            </div>
+                            <footer class="footer2">
+                                1/6
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="bb-item" id="item6">
+                    <div class="content">
+                        <div class="scroller">
+                            <h1 class="title">～２日目&nbsp;帰り編&nbsp;in&nbsp;新幹線&nbsp;～</h1>
+                            <p>お疲れさまです</p>
+                            <div class="image">
+                                <image class="fujiyama" src="images/companion/fujiyama_night.JPG"></image>
+                            </div>
+                            <footer class="footer3">
+                                1/6
+                            </footer>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="bb-item" id="item3">
-                <div class="content">
-                    <div class="scroller">
-                        <h1 class="title">～１日目&nbsp;ディズニー編～</h1>
-                        <p>ミラコスタにチェックイン</p>
-                        <div class="image">
-                            <image class="checkIn" src="images/companion/check_in.png"></image>
-                        </div>
-                        <p>シェフミッキーで夜ご飯</p>
-                        <div class="image">
-                            <image class="buffet" src="images/companion/buffet.png"></image>
-                        </div>
-                        <p>ミラコスタでお泊り</p>
-                        <div class="image">
-                            <image class="hotel" src="images/companion/hotel.png"></image>
-                        </div>
-                        <footer>
-                            1/5
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="bb-item" id="item4">
-                <div class="content">
-                    <div class="scroller">
-                        <h1 class="title">～２日目&nbsp;ディズニー編～</h1>
-                        <p>クリスタルパレスで朝食</p>
-                        <p>ディズニーランドを満喫</p>
-                        <div class="image">
-                            <image class="roller_coaster" src="images/companion/roller_coaster.png"></image>
-                        </div>
-                        <footer>
-                            1/5
-                        </footer>
-                    </div>
-                </div>
-            </div>
-            <div class="bb-item" id="item5">
-                <div class="content">
-                    <div class="scroller">
-                        <h1 class="title">～２日目&nbsp;Faker編&nbsp;in&nbsp;幕張&nbsp;～</h1>
-                        <p></h1>
-                        <p>クリスタルパレスで朝食</p>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /bb-bookblock -->
-        <nav>
-            <span id="bb-nav-prev">&larr;</span>
-            <span id="bb-nav-next">&rarr;</span>
-        </nav>
-    </div><!-- /bb-custom-wrapper -->
-  <script src="js/jquery.1.8.3.min.js"></script>
-  <script src="js/jquery.mousewheel.js"></script>
-  <script src="js/jquery.jscrollpane.js"></script>
-  <script src="js/jquerypp.custom.js"></script>
-  <script src="js/jquery.bookblock.js"></script>
-  <script src="js/page.js"></script>
-  <script>
-    $(function() {
-    Page.init();
-    });
-    
-  </script>
+            <span id="tblcontents" class="menu-button" style="position:absolute;">index</span>
+            <nav>
+                <span id="bb-nav-prev">&larr;</span>
+                <span id="bb-nav-next">&rarr;</span>
+            </nav>
+        </div>
+    </div>
+    <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.jscrollpane.js"></script>
+    <script src="js/jquerypp.custom.js"></script>
+    <script src="js/jquery.bookblock.js"></script>
+    <script src="js/page.js"></script>
+    <script>
+        $(function() {
+        Page.init();
+        });
+        
+    </script>
 </body>
 </html>
