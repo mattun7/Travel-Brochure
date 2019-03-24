@@ -14,11 +14,11 @@ footer {
 }
 
 .footer2 {
-    margin-top: 175px;
+    margin-top: 170px;
 }
 
 .footer3 {
-    margin-top: 200px;
+    margin-top: 190px;
 }
 
 @media only screen and (min-width: 375px) {
@@ -26,10 +26,10 @@ footer {
         margin-top: 70px;
     }
     .footer2{
-        margin-top: 270px;
+        margin-top: 265px;
     }
     .footer3{
-        margin-top: 290px;
+        margin-top: 285px;
     }
 }
 
