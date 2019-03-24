@@ -24,9 +24,11 @@ var Page = (function() {
 
 			}
 		} ),
-		$navNext = $( '#bb-nav-next' ),
+		$navNext = $( '#bb-nav-next' ).css('visibility','visible'),
 		$navPrev = $('#bb-nav-prev').css('visibility','hidden'),
 		$menuItems = $container.find( 'ul.menu-toc > li' ),
+		$toc = $('.TOC_p'),
+		$menu = $('#menu'),
 		$tblcontents = $( '#tblcontents' ),
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
@@ -94,6 +96,17 @@ var Page = (function() {
 			
 		} );
 
+		$toc.on( 'click', function() {
+			var $el = $( this ),
+				idx = $el.index(),
+				item = $el.data('item');
+			bb.jump( item );
+		} );
+
+		$menu.on( 'click', function() {
+			bb.jump( 2 );
+		} );
+
 		// reinit jScrollPane on window resize
 		$( window ).on( 'debouncedresize', function() {
 			// reinitialise jScrollPane on the content div
@@ -127,18 +140,15 @@ var Page = (function() {
 	function updateNavigation( isLastPage ) {
 		
 		if( current === 0 ) {
-			$navNext.show();
-			//$navPrev.hide();
+			$navNext.css('visibility','visible');
 			$navPrev.css('visibility','hidden');
 		}
 		else if( isLastPage ) {
-			$navNext.hide();
-			//$navPrev.show();
+			$navNext.css('visibility','hidden');
 			$navPrev.css('visibility','visible');
 		}
 		else {
-			$navNext.show();
-			//$navPrev.show();
+			$navNext.css('visibility','visible');
 			$navPrev.css('visibility','visible');
 		}
 	}
