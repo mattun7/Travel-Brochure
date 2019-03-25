@@ -13,8 +13,6 @@ var Page = (function() {
 			onEndFlip : function(old, page, isLimit) {
 				
 				current = page;
-				// update TOC current
-				updateTOC();
 				// updateNavigation
 				updateNavigation( isLimit );
 				// initialize jScrollPane on the content div for the new item
@@ -26,7 +24,6 @@ var Page = (function() {
 		} ),
 		$navNext = $( '#bb-nav-next' ).css('visibility','visible'),
 		$navPrev = $('#bb-nav-prev').css('visibility','hidden'),
-		$menuItems = $container.find( 'ul.menu-toc > li' ),
 		$toc = $('.TOC_p'),
 		$menu = $('#menu'),
 		$tblcontents = $( '#tblcontents' ),
@@ -78,24 +75,6 @@ var Page = (function() {
 			}
 		} );
 
-		// show table of contents
-		$tblcontents.on( 'click', toggleTOC );
-
-		// click a menu item
-		$menuItems.on( 'click', function() {
-
-			var $el = $( this ),
-				idx = $el.index(),
-				jump = function() {
-					bb.jump( idx + 1 );
-				};
-			
-			current !== idx ? closeTOC( jump ) : closeTOC();
-
-			return false;
-			
-		} );
-
 		$toc.on( 'click', function() {
 			var $el = $( this ),
 				idx = $el.index(),
@@ -133,10 +112,6 @@ var Page = (function() {
 
 	}
 
-	function updateTOC() {
-		$menuItems.removeClass( 'menu-toc-current' ).eq( current ).addClass( 'menu-toc-current' );
-	}
-
 	function updateNavigation( isLastPage ) {
 		
 		if( current === 0 ) {
@@ -152,36 +127,6 @@ var Page = (function() {
 			$navPrev.css('visibility','visible');
 		}
 	}
-
-	function toggleTOC() {
-		var opened = $container.data( 'opened' );
-		opened ? closeTOC() : openTOC();
-	}
-
-	function openTOC() {
-		$navNext.hide();
-		$navPrev.hide();
-		$container.addClass( 'slideRight' ).data( 'opened', true );
-	}
-
-	function closeTOC( callback ) {
-
-		updateNavigation( current === itemsCount - 1 );
-		$container.removeClass( 'slideRight' ).data( 'opened', false );
-		if( callback ) {
-			if( supportTransitions ) {
-				$container.on( transEndEventName, function() {
-					$( this ).off( transEndEventName );
-					callback.call();
-				} );
-			}
-			else {
-				callback.call();
-			}
-		}
-
-	}
-
 	return { init : init };
 
 })();

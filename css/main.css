@@ -14,11 +14,11 @@ footer {
 }
 
 .footer2 {
-    margin-top: 170px;
+    margin-top: 165px;
 }
 
 .footer3 {
-    margin-top: 190px;
+    margin-top: 185px;
 }
 
 @media only screen and (min-width: 375px) {
@@ -40,6 +40,7 @@ h1 {
 .TOC {
     text-align: center;
     margin: 15% 0 18%;
+    font-size: 2em;
 }
 
 p.TOC_p {
@@ -79,7 +80,7 @@ img {
 
 @media only screen and (max-width: 320px) {
     h1{
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
 }
 
@@ -146,5 +147,19 @@ h3.transfer{
 p.transfer {
     margin-left: 20px;
     padding-left: 10px;
-    border-left: #000000 1px solid;
+    border-left: #000000 2px solid;
+}
+
+p.check {
+    width: 100%;
+    background: #f7f7f7;
+    padding: 0;
+    margin: 10px 0;
+}
+
+label.check {
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+    display: inline-block;
 }
