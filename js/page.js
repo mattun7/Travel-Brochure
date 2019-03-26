@@ -29,7 +29,7 @@ var Page = (function () {
 
 		setJSP('init');
 		initEvents();
-		const page = localStorage.getItem('page');
+		const page = sessionStorage.getItem('page');
 		updateNavigation(page);
 		bb.jump(page);
 	}
@@ -110,7 +110,7 @@ var Page = (function () {
 
 	// 現在のページをSessionStorageに保存
 	function setNowPage(page) {
-		localStorage.setItem('page', page + 1);
+		sessionStorage.setItem('page', page + 1);
 	}
 
 	return {
