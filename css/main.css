@@ -22,13 +22,15 @@ footer {
 }
 
 @media only screen and (min-width: 375px) {
-    .footer1{
+    .footer1 {
         margin-top: 70px;
     }
-    .footer2{
+
+    .footer2 {
         margin-top: 265px;
     }
-    .footer3{
+
+    .footer3 {
         margin-top: 285px;
     }
 }
@@ -39,13 +41,13 @@ h1 {
 
 .TOC {
     text-align: center;
-    margin: 15% 0 18%;
+    margin: 15% 0 15%;
     font-size: 2em;
 }
 
 p.TOC_p {
-    text-align: center;
     padding: 10px 8%;
+    text-align: left;
 }
 
 .indent1 {
@@ -53,7 +55,7 @@ p.TOC_p {
 }
 
 .indent2 {
-    padding-right: 6px;
+    padding-right: 5px;
 }
 
 .indent3 {
@@ -75,11 +77,11 @@ img {
 
 .frontCover {
     margin-top: 30%;
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 320px) {
-    h1{
+    h1 {
         font-size: 1.6em;
     }
 }
@@ -113,6 +115,7 @@ img {
     box-sizing: border-box;
     background-color: blanchedalmond;
 }
+
 #menu div {
     position: absolute;
     left: 0;
@@ -124,22 +127,25 @@ img {
     box-sizing: border-box;
     left: 10px;
 }
+
 #menu div:nth-of-type(1) {
     top: 10px;
 }
+
 #menu div:nth-of-type(2) {
     top: 20px;
 }
+
 #menu div:nth-of-type(3) {
     top: 30px;
 }
 
-h2.transfer{
+h2.transfer {
     background: #f2f2f2;
     padding: 10px 10px;
 }
 
-h3.transfer{
+h3.transfer {
     background: #f2f2f2;
     padding: 10px 20px;
 }
