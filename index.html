@@ -4,11 +4,19 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- manifest.jsonを呼び出しています -->
     <link rel="manifest" href="./manifest.json">
+
+    <!-- Add to home screen for Safari on iOS -->
     <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" sizes="192x192" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Add to splash screen for Safari on iOS -->
     <link rel="apple-touch-startup-image" href="images/splash/640x1136.png"
         media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+
     <script>
         // service workerが有効なら、service_worker.js を登録します
         if ('serviceWorker' in navigator) {
