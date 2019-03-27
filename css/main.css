@@ -62,7 +62,7 @@ p.TOC_p {
     padding-right: 5px;
 }
 
-.title {
+.caption {
     margin-bottom: 10px;
 }
 
@@ -161,6 +161,14 @@ p.check {
     background: #f7f7f7;
     padding: 0;
     margin: 10px 0;
+}
+
+p.check:first-child {
+    margin-top: 0;
+}
+
+p.check:last-child {
+    margin-bottom: 0;
 }
 
 label.check {

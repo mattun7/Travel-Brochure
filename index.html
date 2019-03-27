@@ -30,7 +30,8 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/check.css" />
-    <script src="js/modernizr.custom.79639.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/accordionMenu.css" />
+    <script src="js/oss/modernizr.custom.79639.js"></script>
     <title>旅のしおり</title>
 </head>
 
@@ -80,106 +81,185 @@
                 <div class="bb-item" id="item3">
                     <div class="content">
                         <div class="scroller">
-                            <h1 class="title">持ち物</h1>
-                            <h2>プーさん</h2>
-                            <p class="check">
-                                <input type="checkbox" id="pu1" />
-                                <label class="check" for="pu1">ベビ</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="pu2" />
-                                <label class="check" for="pu2">デブ</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="pu3" />
-                                <label class="check" for="pu3">冒険家</label>
-                            </p>
-
-                            <h2>ディズニー</h2>
-                            <p class="check">
-                                <input type="checkbox" id="de1" />
-                                <label class="check" for="de1">パスケース</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="de2" />
-                                <label class="check" for="de2">プーさんの帽子</label>
-                            </p>
-
-                            <h2>貴重品</h2>
-                            <p class="check">
-                                <input type="checkbox" id="ki1" />
-                                <label class="check" for="ki1">財布</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="ki2" />
-                                <label class="check" for="ki2">クーポン</label>
-                            </p>
-
-                            <h2>衣類</h2>
-                            <p class="check">
-                                <input type="checkbox" id="iru1" />
-                                <label class="check" for="iru1">下着</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="iru2" />
-                                <label class="check" for="iru2">トップス</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="iru3" />
-                                <label class="check" for="iru3">ボトムス</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="iru4" />
-                                <label class="check" for="iru4">靴下</label>
-                            </p>
-
-                            <h2>洗面用具</h2>
-                            <p class="check">
-                                <input type="checkbox" id="se1" />
-                                <label class="check" for="se1">歯ブラシ</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="se2" />
-                                <label class="check" for="se2">化粧水</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="se3" />
-                                <label class="check" for="se3">乳液</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="se4" />
-                                <label class="check" for="se4">クレンジング</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="se5" />
-                                <label class="check" for="se5">化粧品</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="se6" />
-                                <label class="check" for="se6">化粧落とし</label>
-                            </p>
-
-                            <h2>その他</h2>
-                            <p class="check">
-                                <input type="checkbox" id="so1" />
-                                <label class="check" for="so1">折り畳み傘</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="so2" />
-                                <label class="check" for="so2">充電器</label>
-                            </p>
-                            <p class="check">
-                                <input type="checkbox" id="so3" />
-                                <label class="check" for="so3">ティッシュ</label>
-                            </p>
-
+                            <h1 class="caption">持ち物</h1>
+                            <div class="accordionbox">
+                                <dl class="accordionlist">
+                                    <dt class="clearfix">
+                                        <p class="accordion_icon active">
+                                            <span></span>
+                                            <span></span>
+                                        </p>
+                                        <div class="accordion">
+                                            <p class="accordion_p">プーさん</p>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        <p class="check">
+                                            <input type="checkbox" id="pu1" />
+                                            <label class="check" for="pu1">ベビ</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="pu2" />
+                                            <label class="check" for="pu2">デブ</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="pu3" />
+                                            <label class="check" for="pu3">冒険家</label>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="accordionbox">
+                                <dl class="accordionlist">
+                                    <dt class="clearfix">
+                                        <p class="accordion_icon active">
+                                            <span></span>
+                                            <span></span>
+                                        </p>
+                                        <div class="accordion">
+                                            <p class="accordion_p">ディズニー</p>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        <p class="check">
+                                            <input type="checkbox" id="de1" />
+                                            <label class="check" for="de1">パスケース</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="de2" />
+                                            <label class="check" for="de2">プーさんの帽子</label>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="accordionbox">
+                                <dl class="accordionlist">
+                                    <dt class="clearfix">
+                                        <p class="accordion_icon active">
+                                            <span></span>
+                                            <span></span>
+                                        </p>
+                                        <div class="accordion">
+                                            <p class="accordion_p">貴重品</p>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        <p class="check">
+                                            <input type="checkbox" id="ki1" />
+                                            <label class="check" for="ki1">財布</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="ki2" />
+                                            <label class="check" for="ki2">クーポン</label>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <h2></h2>
+                            <div class="accordionbox">
+                                <dl class="accordionlist">
+                                    <dt class="clearfix">
+                                        <p class="accordion_icon active">
+                                            <span></span>
+                                            <span></span>
+                                        </p>
+                                        <div class="accordion">
+                                            <p class="accordion_p">衣類</p>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        <p class="check">
+                                            <input type="checkbox" id="iru1" />
+                                            <label class="check" for="iru1">下着</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="iru2" />
+                                            <label class="check" for="iru2">トップス</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="iru3" />
+                                            <label class="check" for="iru3">ボトムス</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="iru4" />
+                                            <label class="check" for="iru4">靴下</label>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="accordionbox">
+                                <dl class="accordionlist">
+                                    <dt class="clearfix">
+                                        <p class="accordion_icon active">
+                                            <span></span>
+                                            <span></span>
+                                        </p>
+                                        <div class="accordion">
+                                            <p class="accordion_p">洗面用具</p>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        <p class="check">
+                                            <input type="checkbox" id="se1" />
+                                            <label class="check" for="se1">歯ブラシ</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="se2" />
+                                            <label class="check" for="se2">化粧水</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="se3" />
+                                            <label class="check" for="se3">乳液</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="se4" />
+                                            <label class="check" for="se4">クレンジング</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="se5" />
+                                            <label class="check" for="se5">化粧品</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="se6" />
+                                            <label class="check" for="se6">化粧落とし</label>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="accordionbox">
+                                <dl class="accordionlist">
+                                    <dt class="clearfix">
+                                        <p class="accordion_icon active">
+                                            <span></span>
+                                            <span></span>
+                                        </p>
+                                        <div class="accordion">
+                                            <p class="accordion_p">その他</p>
+                                        </div>
+                                    </dt>
+                                    <dd>
+                                        <p class="check">
+                                            <input type="checkbox" id="so1" />
+                                            <label class="check" for="so1">折り畳み傘</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="so2" />
+                                            <label class="check" for="so2">充電器</label>
+                                        </p>
+                                        <p class="check">
+                                            <input type="checkbox" id="so3" />
+                                            <label class="check" for="so3">ティッシュ</label>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="bb-item" id="item4">
                     <div class="content">
                         <div class="scroller">
-                            <h1 class="title">乗り換え</h1>
+                            <h1 class="caption">乗り換え</h1>
                             <h2 class="transfer">名古屋</h2>
                             <p class="transfer">新幹線&nbsp;のぞみ(東京行)</p>
                             <h2 class="transfer">東京</h2>
@@ -208,7 +288,7 @@
                 <div class="bb-item" id="item5">
                     <div class="content">
                         <div class="scroller">
-                            <h1 class="title">～１日目&nbsp;行き編&nbsp;in&nbsp;新幹線&nbsp;～</h1>
+                            <h1 class="caption">～１日目&nbsp;行き編&nbsp;in&nbsp;新幹線&nbsp;～</h1>
                             <p>元気よく出発</p>
                             <div class="image">
                                 <image class="fujiyama" src="images/companion/fujiyama.JPG"></image>
@@ -226,7 +306,7 @@
                 <div class="bb-item" id="item6">
                     <div class="content">
                         <div class="scroller">
-                            <h1 class="title">～１日目&nbsp;Faker編&nbsp;in&nbsp;お台場&nbsp;～</h1>
+                            <h1 class="caption">～１日目&nbsp;Faker編&nbsp;in&nbsp;お台場&nbsp;～</h1>
                             <p>お昼は串家物語<br>ダイバーシティ&nbsp;東京プラザ店</p>
                             <div class="image">
                                 <image class="lunch" src="images/companion/lunch.png"></image>
@@ -256,7 +336,7 @@
                 <div class="bb-item" id="item7">
                     <div class="content">
                         <div class="scroller">
-                            <h1 class="title">～１日目&nbsp;ディズニー編～</h1>
+                            <h1 class="caption">～１日目&nbsp;ディズニー編～</h1>
                             <p>ミラコスタにチェックイン</p>
                             <div class="image">
                                 <image class="checkIn" src="images/companion/check_in.png"></image>
@@ -278,7 +358,7 @@
                 <div class="bb-item" id="item8">
                     <div class="content">
                         <div class="scroller">
-                            <h1 class="title">～２日目&nbsp;ディズニー編～</h1>
+                            <h1 class="caption">～２日目&nbsp;ディズニー編～</h1>
                             <p>クリスタルパレスで朝食</p>
                             <div class="image">
                                 <image class="breakfast transform" src="images/companion/breakfast.JPG"></image>
@@ -296,7 +376,7 @@
                 <div class="bb-item" id="item9">
                     <div class="content">
                         <div class="scroller">
-                            <h1 class="title">～２日目&nbsp;Faker編&nbsp;in&nbsp;幕張&nbsp;～</h1>
+                            <h1 class="caption">～２日目&nbsp;Faker編&nbsp;in&nbsp;幕張&nbsp;～</h1>
                             <p>夜は寿司&nbsp;やまと<br>海浜幕張店</p>
                             <div class="image">
                                 <image class="sushi" src="images/companion/sushi.png"></image>
@@ -310,7 +390,7 @@
                 <div class="bb-item" id="item10">
                     <div class="content">
                         <div class="scroller">
-                            <h1 class="title">～２日目&nbsp;帰り編&nbsp;in&nbsp;新幹線&nbsp;～</h1>
+                            <h1 class="caption">～２日目&nbsp;帰り編&nbsp;in&nbsp;新幹線&nbsp;～</h1>
                             <p>お疲れさまです</p>
                             <div class="image">
                                 <image class="fujiyama" src="images/companion/fujiyama_night.JPG"></image>
@@ -333,12 +413,13 @@
             </nav>
         </div>
     </div>
-    <script src="js/jquery.1.8.3.min.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script src="js/jquery.jscrollpane.min.js"></script>
-    <script src="js/jquerypp.custom.js"></script>
-    <script src="js/jquery.bookblock.js"></script>
+    <script src="js/oss/jquery.1.8.3.min.js"></script>
+    <script src="js/oss/jquery.mousewheel.js"></script>
+    <script src="js/oss/jquery.jscrollpane.min.js"></script>
+    <script src="js/oss/jquerypp.custom.js"></script>
+    <script src="js/oss/jquery.bookblock.js"></script>
     <script src="js/page.js"></script>
+    <script src="js/accordionMenu.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             Page.init();
