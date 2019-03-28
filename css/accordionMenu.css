@@ -53,44 +53,17 @@
     background-color: #F88789;
     border-radius: 4px;
     -webkit-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -o-border-radius: 4px;
 }
 
+/* ＋、×切り替え 1回目 */
 .accordion_icon span:nth-of-type(1) {
     top: 5px;
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
 }
 
 .accordion_icon span:nth-of-type(2) {
     top: 5px;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-}
-
-/*＋、×切り替え*/
-.accordion_icon.active span:nth-of-type(1) {
-    top: 5px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-}
-
-.accordion_icon.active span:nth-of-type(2) {
-    top: 5px;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
 }

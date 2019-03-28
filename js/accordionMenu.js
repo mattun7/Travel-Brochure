@@ -1,14 +1,20 @@
+var rotate = 45;
+
 $(function () {
     $(".accordionbox dt").on("click", function () {
         $(this).next().slideToggle('normal', resetScroll);
         // activeが存在する場合
-        if ($(this).children(".accordion_icon").hasClass('active')) {
-            // activeを削除
-            $(this).children(".accordion_icon").removeClass('active');
-        } else {
-            // activeを追加
-            $(this).children(".accordion_icon").addClass('active');
-        }
+
+        const $accordion_icon = $(this).children(".accordion_icon");
+
+        const $span_1 = $(this).find('span:nth-child(1)');
+        const $span_2 = $(this).find('span:nth-child(2)');
+        let rotate_1 = $(this).data('1') + rotate;
+        let rotate_2 = $(this).data('2') + rotate;
+        $span_1.css('transform', 'rotate(' + rotate_1 + 'deg)');
+        $span_2.css('transform', 'rotate(' + rotate_2 + 'deg)');
+        $(this).data('1', rotate_1);
+        $(this).data('2', rotate_2);
     });
 });
 
