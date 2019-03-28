@@ -31,6 +31,7 @@ var Page = (function () {
 		initEvents();
 		const page = localStorage.getItem('page');
 		updateNavigation(page);
+		belongsInit();
 		bb.jump(page);
 	}
 
