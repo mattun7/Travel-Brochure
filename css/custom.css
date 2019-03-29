@@ -139,19 +139,14 @@ a:hover {
 	height: 45px;
 	top: 0;
 	left: 0;
-	background: #f1103a;
-	color: #fff;
+	background: #fff;
+	color: #000;
 	line-height: 30px;
 	text-align: center;
 	font-weight: bold;
 	cursor: pointer;
 	padding-top: 8px;
 	font-size: 25px;
-}
-
-.bb-custom-wrapper nav span:hover,
-.menu-button:hover {
-	background: #000;
 }
 
 .bb-custom-wrapper nav span:last-child {

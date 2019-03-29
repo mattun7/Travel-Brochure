@@ -113,31 +113,26 @@ img {
     width: 50px;
     display: inline-block;
     box-sizing: border-box;
-    background-color: blanchedalmond;
+    background-color: #fff;
+    border-left: #000 2px solid;
+    border-right: #000 2px solid;
 }
 
 #menu div {
     position: absolute;
-    left: 0;
-    height: 4px;
-    width: 24px;
-    background-color: #444;
-    border-radius: 2px;
-    display: inline-block;
-    box-sizing: border-box;
-    left: 10px;
+    left: 7px;
 }
 
 #menu div:nth-of-type(1) {
-    top: 10px;
+    top: -1px;
 }
 
 #menu div:nth-of-type(2) {
-    top: 20px;
+    top: 10px;
 }
 
 #menu div:nth-of-type(3) {
-    top: 30px;
+    top: 20px;
 }
 
 h2.transfer {
@@ -176,4 +171,12 @@ label.check {
     font-size: 1.3em;
     text-align: center;
     display: inline-block;
+}
+
+#border {
+    position: absolute;
+    border-top: #000000 2px solid;
+    bottom: 45px;
+    width: 100%;
+    z-index: 100;
 }

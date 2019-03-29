@@ -23,14 +23,14 @@ var Page = (function () {
 		$navNext = $('#bb-nav-next'),
 		$navPrev = $('#bb-nav-prev'),
 		$toc = $('.TOC_p'),
-		$menu = $('#menu');
+		$menu = $('#menu'),
+		$border = $('#border');
 
 	function init() {
 
 		setJSP('init');
 		initEvents();
 		const page = localStorage.getItem('page');
-		updateNavigation(page);
 		belongsInit();
 		bb.jump(page);
 	}
@@ -74,7 +74,11 @@ var Page = (function () {
 		});
 
 		$menu.on('click', function () {
-			bb.jump(2);
+			$border.css('visibility', 'hidden');
+			$navPrev.css('visibility', 'hidden');
+			$menu.css('visibility', 'hidden');
+			$navNext.css('visibility', 'hidden');
+			bb.jump(1);
 		});
 	}
 
@@ -95,18 +99,24 @@ var Page = (function () {
 	// 次へボタン、戻るボタンの制御
 	function updateNavigation(isLastPage) {
 		if (current === 0) {
-			// 最初最終ページ以外の場合、次へ戻るボタンを表示
-			$navNext.css('visibility', 'visible');
+			return;
+		} else if (current === 1) {
+			// 2ページ目、メニューと次へボタンを表示
 			$navPrev.css('visibility', 'hidden');
+			$menu.css('visibility', 'visible');
+			$navNext.css('visibility', 'visible');
 		} else if (isLastPage) {
 			// 最終ページの場合、次へボタン非表示
+			$navPrev.css('visibility', 'visible');
+			$menu.css('visibility', 'visible');
 			$navNext.css('visibility', 'hidden');
-			$navPrev.css('visibility', 'visible');
 		} else {
-			// 最初のページの場合、戻るボタン非表示
-			$navNext.css('visibility', 'visible');
+			// 最初最後以外ページの場合、戻るボタン非表示
 			$navPrev.css('visibility', 'visible');
+			$menu.css('visibility', 'visible');
+			$navNext.css('visibility', 'visible');
 		}
+		$border.css('visibility', 'visible');
 	}
 
 	// 現在のページをlocalStorageに保存
