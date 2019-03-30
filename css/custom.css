@@ -131,7 +131,7 @@ a:hover {
 	display: flex;
 	bottom: -50px;
 	width: 100%;
-	border-top: 2px #000000 solid;
+	border-top: 2px #e8e8e8 solid;
 	transition: 1s all;
 }
 
@@ -149,6 +149,10 @@ a:hover {
 	cursor: pointer;
 	padding-top: 8px;
 	font-size: 25px;
+}
+
+.bb-custom-wrapper nav span:hover {
+	font-size: 20px;
 }
 
 .bb-custom-wrapper nav span:last-child {
