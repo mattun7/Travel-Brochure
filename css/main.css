@@ -178,3 +178,24 @@ label.check {
     width: 100%;
     z-index: 100;
 }
+
+.train {
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    top: 215px;
+    animation-name: moveTrain;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveTrain {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 400px;
+    }
+}

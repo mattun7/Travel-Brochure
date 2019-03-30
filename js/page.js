@@ -104,8 +104,10 @@ var Page = (function () {
 	function setEvents() {
 		$navNext[0].addEventListener('click', pageNext);
 		$navPrev[0].addEventListener('click', pagePrev);
-		$items[0].addEventListener('swipeleft', pageNext);
-		$items[1].addEventListener('swiperight', pagePrev);
+		for (let i = 1; i < 8; i++) {
+			$items[i].addEventListener('swipeleft', pageNext);
+			$items[i].addEventListener('swiperight', pagePrev);
+		}
 		for (let i = 0; i < 8; i++) {
 			$toc[i].addEventListener('click', pageTop);
 		}
