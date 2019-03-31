@@ -41,13 +41,13 @@ h1 {
 
 .TOC {
     text-align: center;
-    margin: 15% 0 15%;
+    margin: 15% 0 20%;
     font-size: 2em;
 }
 
 p.TOC_p {
     padding: 10px 8%;
-    text-align: left;
+    text-align: center;
 }
 
 .indent1 {
@@ -84,11 +84,6 @@ img {
     h1 {
         font-size: 1.6em;
     }
-}
-
-.train {
-    width: 30px;
-    height: 30px;
 }
 
 .freedomGirl {
@@ -134,13 +129,17 @@ img {
 }
 
 h2.transfer {
-    background: #f2f2f2;
+    background: #a7ffb7;
     padding: 10px 10px;
 }
 
-h3.transfer {
-    background: #f2f2f2;
+h2.transit {
+    font-size: 1.17em;
     padding: 10px 20px;
+}
+
+.transfarColor {
+    background: #f2f2f2 !important;
 }
 
 p.transfer {
@@ -188,14 +187,18 @@ label.check {
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    animation-delay: 1s;
+    opacity: 0;
 }
 
 @keyframes moveTrain {
     from {
-        left: -1000px;
+        left: -150px;
+        opacity: 1;
     }
 
     to {
         left: 400px;
+        opacity: 1;
     }
 }

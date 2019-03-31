@@ -20,7 +20,7 @@ $(function () {
     });
 });
 
-function belongsInit() {
+function initBelongs() {
     $('input[type=checkbox]').map(function () {
         let id = $(this).attr('id');
         let checked = localStorage.getItem(id);
