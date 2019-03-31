@@ -24,7 +24,6 @@ var Page = (function () {
 		$navPrev = $('#bb-nav-prev'),
 		$toc = $('.TOC_p'),
 		$menu = $('#menu'),
-		$border = $('#border'),
 		$nav = $('#nav'),
 		$endRoll = $('.endRoll'),
 		pageNext = function () {
@@ -59,7 +58,7 @@ var Page = (function () {
 		setEvents();
 		$items.on({
 			'swipeleft': function (event) {
-				if (current > 1) {
+				if (current <= 1) {
 					// 最初のページなので遷移させない
 					return false;
 				}
@@ -68,7 +67,7 @@ var Page = (function () {
 				return false;
 			},
 			'swiperight': function (event) {
-				if (current <= 8) {
+				if (current >= 8) {
 					// 最終ページなので遷移させない
 					return false;
 				}
