@@ -19,7 +19,7 @@ $(function () {
 });
 
 function resetScroll() {
-    $('#item3').children('div.content').jScrollPane({
+    $('#item2').children('div.content').jScrollPane({
         verticalGutter: 0,
         hideFocus: true,
         showArrows: true
