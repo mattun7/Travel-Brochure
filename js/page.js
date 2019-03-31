@@ -26,6 +26,7 @@ var Page = (function () {
 		$menu = $('#menu'),
 		$border = $('#border'),
 		$nav = $('#nav'),
+		$endRoll = $('.endRoll'),
 		pageNext = function () {
 			updateNavigation(current + 1);
 			bb.next();
@@ -41,13 +42,16 @@ var Page = (function () {
 				idx = $el.index(),
 				page = $el.data('item');
 			updateNavigation(page - 1);
-			$nav.css('bottom', '0');
+			if (page == 10) {
+				playMusic();
+			}
 			bb.jump(page);
 		},
 		pageMenu = function () {
 			$nav.css('bottom', '-50px');
 			bb.jump(1);
-		};
+		},
+		audioElem;
 
 	function init() {
 
@@ -74,11 +78,19 @@ var Page = (function () {
 			}
 		});
 
+		$endRoll.on({
+			'click': function () {
+				//document.removeEventListener('click', audioPlay);
+				audioElem.pause();
+				pageMenu();
+			}
+		})
+
 		const page = localStorage.getItem('page');
 		initBelongs();
 		initTransfer();
 		updateNavigation(page - 1);
-		bb.jump(page);
+		bb.jump(page == 10 ? 1 : page);
 	}
 
 	function setJSP(action, idx) {
@@ -89,15 +101,18 @@ var Page = (function () {
 		if (action === 'event') {
 			setNowPage(idx);
 		}
-		$content.jScrollPane({
-			verticalGutter: 0,
-			hideFocus: true
-		});
+
+		if (idx !== 9) {
+			$content.jScrollPane({
+				verticalGutter: 0,
+				hideFocus: true
+			});
+		}
 	}
 
 	// 次へボタン、戻るボタンの制御
 	function updateNavigation(page) {
-		if (page === 0) {
+		if (page === 0 || page === 9) {
 			return;
 		} else if (page === 1) {
 			// 2ページ目、メニューと次へボタンを表示
@@ -126,7 +141,7 @@ var Page = (function () {
 	function setEvents() {
 		$navNext[0].addEventListener('click', pageNext);
 		$navPrev[0].addEventListener('click', pagePrev);
-		for (let i = 0; i < 8; i++) {
+		for (let i = 0; i < $toc.length; i++) {
 			$toc[i].addEventListener('click', pageTop);
 		}
 		$menu[0].addEventListener('click', pageMenu);
@@ -135,10 +150,17 @@ var Page = (function () {
 	function clearEvents() {
 		$navNext[0].removeEventListener('click', pageNext);
 		$navPrev[0].removeEventListener('click', pagePrev);
-		for (let i = 0; i < 8; i++) {
+		for (let i = 0; i < $toc.length; i++) {
 			$toc[i].removeEventListener('click', pageTop);
 		}
 		$menu[0].removeEventListener('click', pageMenu);
+	}
+
+	function playMusic() {
+		//document.getElementById('audio').play();
+		audioElem = new Audio();
+		audioElem.src = "music/yuuenchi.mp3";
+		audioElem.play();
 	}
 
 	return {

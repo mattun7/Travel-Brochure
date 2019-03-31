@@ -202,3 +202,67 @@ label.check {
         opacity: 1;
     }
 }
+
+.endRoll {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: background;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background {
+    from {
+        background: #fff;
+        transform: scale(0, 0);
+    }
+
+    to {
+        background: #000;
+        transform: scale(1, 1);
+    }
+
+}
+
+.endRollAnime {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: anime14_text;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    color: #616161;
+}
+
+.endRoll_text {
+    color: #fff;
+    margin-bottom: 45px;
+    font-size: 1.5em;
+}
+
+@keyframes anime14_text {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -400%;
+    }
+}
+
+.boss {
+    margin-top: 200px;
+}
+
+.end {
+    margin-top: 480px;
+}
