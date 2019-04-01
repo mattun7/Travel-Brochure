@@ -41,7 +41,7 @@ h1 {
 
 .TOC {
     text-align: center;
-    margin: 15% 0 10%;
+    margin: 13% 0 8%;
     font-size: 2em;
 }
 
@@ -241,7 +241,7 @@ label.check {
     left: 50%;
     transform: translateX(-50%);
     animation-name: anime14_text;
-    animation-duration: 108s;
+    animation-duration: 114s;
     animation-timing-function: linear;
     animation-delay: 3s;
     animation-fill-mode: forwards;
@@ -261,7 +261,7 @@ label.check {
     }
 
     100% {
-        top: -2201px;
+        top: -2191px;
     }
 }
 
@@ -272,7 +272,7 @@ label.check {
         }
 
         100% {
-            top: -2152px;
+            top: -2142px;
         }
     }
 }

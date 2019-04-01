@@ -58,8 +58,8 @@ var Page = (function () {
 		setEvents();
 		$items.on({
 			'swipeleft': function (event) {
-				if (current <= 1) {
-					// 最初のページなので遷移させない
+				if (current == 0 || current >= 8) {
+					// 最終ページなので遷移させない
 					return false;
 				}
 				updateNavigation(current + 1);
@@ -67,8 +67,8 @@ var Page = (function () {
 				return false;
 			},
 			'swiperight': function (event) {
-				if (current >= 8) {
-					// 最終ページなので遷移させない
+				if (current <= 1 || current == 9) {
+					// 最初のページなので遷移させない
 					return false;
 				}
 				updateNavigation(current - 1);
@@ -101,10 +101,12 @@ var Page = (function () {
 			setNowPage(idx);
 		}
 
-		$content.jScrollPane({
-			verticalGutter: 0,
-			hideFocus: true
-		});
+		if (idx !== 9) {
+			$content.jScrollPane({
+				verticalGutter: 0,
+				hideFocus: true
+			});
+		}
 	}
 
 	// 次へボタン、戻るボタンの制御
