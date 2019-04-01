@@ -41,7 +41,7 @@ h1 {
 
 .TOC {
     text-align: center;
-    margin: 15% 0 15%;
+    margin: 15% 0 10%;
     font-size: 2em;
 }
 
@@ -205,26 +205,32 @@ label.check {
 
 .endRoll {
     width: 100%;
-    height: 700px;
+    height: 508px;
     position: absolute;
     top: 0;
     left: 0;
     animation-name: background;
-    animation-duration: 0.5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
+@media only screen and (min-width: 375px) {
+    .endRoll {
+        height: 607px;
+    }
+}
+
 @keyframes background {
     from {
         background: #fff;
-        transform: scale(0, 0);
+        clip-path: circle(0 at 50% 50%);
     }
 
     to {
         background: #000;
-        transform: scale(1, 1);
+        clip-path: circle(100% at 50% 50%);
     }
 
 }
@@ -235,9 +241,9 @@ label.check {
     left: 50%;
     transform: translateX(-50%);
     animation-name: anime14_text;
-    animation-duration: 120s;
+    animation-duration: 108s;
     animation-timing-function: linear;
-    animation-delay: 1.5s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
     text-align: center;
     color: #616161;
@@ -255,7 +261,19 @@ label.check {
     }
 
     100% {
-        top: -400%;
+        top: -2201px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    @keyframes anime14_text {
+        0% {
+            top: 100%;
+        }
+
+        100% {
+            top: -2152px;
+        }
     }
 }
 
