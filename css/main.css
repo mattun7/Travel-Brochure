@@ -27,11 +27,11 @@ footer {
     }
 
     .footer2 {
-        margin-top: 265px;
+        margin-top: 260px;
     }
 
     .footer3 {
-        margin-top: 285px;
+        margin-top: 280px;
     }
 }
 
@@ -43,6 +43,12 @@ h1 {
     text-align: center;
     margin: 13% 0 8%;
     font-size: 2em;
+}
+
+@media only screen and (min-width: 375px) {
+    .TOC {
+        margin: 15% 0 20%;
+    }
 }
 
 p.TOC_p {
