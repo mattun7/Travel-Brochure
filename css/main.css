@@ -37,6 +37,7 @@ footer {
 
 h1 {
     text-align: center;
+    font-size: 1.6em;
 }
 
 .TOC {
@@ -84,12 +85,6 @@ img {
 .frontCover {
     margin-top: 30%;
     margin-bottom: 50px;
-}
-
-@media only screen and (max-width: 320px) {
-    h1 {
-        font-size: 1.6em;
-    }
 }
 
 .freedomGirl {
@@ -188,7 +183,7 @@ label.check {
     width: 150px;
     height: 20px;
     position: absolute;
-    top: 215px;
+    top: 220px;
     animation-name: moveTrain;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -247,12 +242,18 @@ label.check {
     left: 50%;
     transform: translateX(-50%);
     animation-name: anime14_text;
-    animation-duration: 114s;
+    animation-duration: 111s;
     animation-timing-function: linear;
     animation-delay: 3s;
     animation-fill-mode: forwards;
     text-align: center;
     color: #616161;
+}
+
+@media only screen and (min-width: 375px) {
+    .endRollAnime {
+        animation-duration: 117s;
+    }
 }
 
 .endRoll_text {
@@ -267,7 +268,7 @@ label.check {
     }
 
     100% {
-        top: -2191px;
+        top: -2171px;
     }
 }
 
