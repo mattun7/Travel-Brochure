@@ -332,13 +332,11 @@
                     <div class="content">
                         <div class="scroller">
                             <h1 class="caption">～１日目 Faker編 in お台場 ～</h1>
-                            <p>お昼は串家物語<br>ダイバーシティ 東京プラザ店</p>
-                            <div class="image">
-                                <image class="lunch" src="images/companion/lunch.png"></image>
-                            </div>
                             <p>台場一丁目商店街にて射的</p>
                             <div class="image">
-                                <image class="cum" src="images/companion/cum.png"></image>
+                                <a href="images/maps/map_cum.png" class="popup">
+                                    <image class="cum" src="images/companion/cum.png"></image>
+                                </a>
                             </div>
                             <p>自由の女神で写真撮影</p>
                             <div class="image">
@@ -346,13 +344,23 @@
                                     <image class="freedomGirl" src="images/companion/freedom_girl_faker.png"></image>
                                 </a>
                             </div>
+                            <p>お昼は串家物語<br>ダイバーシティ 東京プラザ店</p>
+                            <div class="image">
+                                <a href="images/maps/map_lunch.png" class="popup">
+                                    <image class="lunch" src="images/companion/lunch.png"></image>
+                                </a>
+                            </div>
                             <p>ガンダムの前で写真撮影</p>
                             <div class="image">
-                                <image class="gundom" src="images/companion/gundam_faker.png"></image>
+                                <a href="images/maps/map_gundam_faker.png" class="popup">
+                                    <image class="gundom" src="images/companion/gundam_faker.png"></image>
+                                </a>
                             </div>
                             <p>観覧車に乗る</p>
                             <div class="image">
-                                <image class="ferris_wheel" src="images/companion/ferris_wheel.png"></image>
+                                <a href="images/maps/map_ferris_wheel.png" class="popup">
+                                    <image class="ferris_wheel" src="images/companion/ferris_wheel.png"></image>
+                                </a>
                             </div>
                             <footer>
                                 4/8
@@ -366,11 +374,15 @@
                             <h1 class="caption">～１日目 ディズニー編～</h1>
                             <p>ミラコスタにチェックイン</p>
                             <div class="image">
-                                <image class="checkIn" src="images/companion/check_in.png"></image>
+                                <a href="images/maps/map_check_in.png" class="popup">
+                                    <image class="checkIn" src="images/companion/check_in.png"></image>
+                                </a>
                             </div>
                             <p>シェフミッキーで夜ご飯<br>18：40～</p>
                             <div class="image">
-                                <image class="buffet" src="images/companion/buffet.png"></image>
+                                <a href="images/maps/map_buffet.png" class="popup">
+                                    <image class="buffet" src="images/companion/buffet.png"></image>
+                                </a>
                             </div>
                             <p>ミラコスタでお泊り</p>
                             <div class="image">
@@ -388,7 +400,9 @@
                             <h1 class="caption">～２日目 ディズニー編～</h1>
                             <p>クリスタルパレスで朝食<br>9:00～</p>
                             <div class="image">
-                                <image class="breakfast transform" src="images/companion/breakfast.JPG"></image>
+                                <a href="images/maps/map_breakfast.JPG" class="popup">
+                                    <image class="breakfast transform" src="images/companion/breakfast.JPG"></image>
+                                </a>
                             </div>
                             <p>ディズニーランドを満喫</p>
                             <div class="image">
@@ -410,7 +424,9 @@
                             <h1 class="caption">～２日目 Faker編 in 幕張 ～</h1>
                             <p>夜は寿司 やまと<br>海浜幕張店</p>
                             <div class="image">
-                                <image class="sushi" src="images/companion/sushi.png"></image>
+                                <a href="images/maps/map_sushi.png" class="popup">
+                                    <image class="sushi" src="images/companion/sushi.png"></image>
+                                </a>
                             </div>
                             <footer class="footer2">
                                 7/8
@@ -562,7 +578,8 @@
             $('.popup').magnificPopup({
                 type: "image",
                 closeOnContentClick: true,
-                closeOnBgClick: true
+                closeOnBgClick: true,
+                showCloseBtn: false
             });
         });
     </script>
