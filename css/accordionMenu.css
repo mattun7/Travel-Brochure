@@ -67,3 +67,9 @@
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
 }
+
+@media only screen and (min-width: 375px) {
+    #present {
+        display: none;
+    }
+}

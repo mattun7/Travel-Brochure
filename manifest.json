@@ -1,5 +1,5 @@
 {
-  "name": "旅のしおり",
+  "name": "旅のしおり PWA",
   "short_name": "旅のしおり",
   "start_url": "./index.html",
   "display": "standalone",
