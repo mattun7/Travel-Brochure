@@ -226,12 +226,12 @@ label.check {
 @keyframes background {
     from {
         background: #fff;
-        clip-path: circle(0 at 50% 50%);
+        -webkit-clip-path: circle(0 at 50% 50%);
     }
 
     to {
         background: #000;
-        clip-path: circle(100% at 50% 50%);
+        -webkit-clip-path: circle(100% at 50% 50%);
     }
 
 }
@@ -242,7 +242,7 @@ label.check {
     left: 50%;
     transform: translateX(-50%);
     animation-name: anime14_text;
-    animation-duration: 111s;
+    animation-duration: 108s;
     animation-timing-function: linear;
     animation-delay: 3s;
     animation-fill-mode: forwards;
@@ -252,7 +252,7 @@ label.check {
 
 @media only screen and (min-width: 375px) {
     .endRollAnime {
-        animation-duration: 117s;
+        animation-duration: 111s;
     }
 }
 
