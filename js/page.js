@@ -5,7 +5,7 @@ var Page = (function () {
 		$items = $bookBlock.children(),
 		current = 0,
 		bb = $('#bb-bookblock').bookblock({
-			speed: 800,
+			speed: 900,
 			perspective: 2000,
 			shadows: true,
 			shadowSides: 0.8,
